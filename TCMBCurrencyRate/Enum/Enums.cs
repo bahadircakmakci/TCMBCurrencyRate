@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TBMBCurrencyRate.Enum
+namespace TCMBCurrencyRate.Enum
 {
     public enum Sorting
     {

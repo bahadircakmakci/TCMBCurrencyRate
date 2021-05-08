@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
-using TBMBCurrencyRate.Enum;
-using TBMBCurrencyRate.Model;
+using TCMBCurrencyRate.Enum;
+using TCMBCurrencyRate.Model;
 using System.Xml.Serialization;
 using System.IO;
 using System.Text;
 
-namespace TBMBCurrencyRate
+namespace TCMBCurrencyRate
 {
     public static class GetCurrencyRate
     {
