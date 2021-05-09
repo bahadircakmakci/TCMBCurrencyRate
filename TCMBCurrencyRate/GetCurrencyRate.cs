@@ -7,13 +7,15 @@ using TCMBCurrencyRate.Model;
 using System.Xml.Serialization;
 using System.IO;
 using System.Text;
+using System.Linq.Expressions;
+using System;
 
 namespace TCMBCurrencyRate
 {
     public static class GetCurrencyRate
     {
 
-        private static List<Currency> GetAllTBMBCurrencyRate()
+        private static IQueryable<Currency> GetAllTBMBCurrencyRate()
         {
             XDocument XDoc = XDocument.Load(@"https://www.tcmb.gov.tr/kurlar/today.xml");
 
@@ -38,12 +40,21 @@ namespace TCMBCurrencyRate
                 });
             }
 
-            return elementler;
+            return elementler.AsQueryable();
         }
 
-        public static List<Currency> GetFiltredCurrencyRate(string orderTable, Sorting sorting = Sorting.ASC)
+        public static List<Currency> GetFiltredCurrencyRate(Expression<Func<Currency, bool>> expression,string orderTable, Sorting sorting = Sorting.ASC)
         {
-            var currencies = GetAllTBMBCurrencyRate();
+            var currencies = new List<Currency>();
+            if (expression!=null)
+            {
+                currencies = GetAllTBMBCurrencyRate().Where(expression).ToList();
+            }
+            else
+            {
+                currencies = GetAllTBMBCurrencyRate().ToList();
+            }
+            
            
             if (orderTable != null && orderTable!="")
             {
@@ -59,7 +70,7 @@ namespace TCMBCurrencyRate
             }
             else
             {
-                return currencies;
+                return currencies.ToList();
             }
 
 

@@ -26,11 +26,6 @@ namespace TCMBCurrencyRate.Model
         public decimal? BanknoteBuying { get; set; }
         [XmlElement(ElementName = "BanknoteSelling")]
         public decimal? BanknoteSelling { get; set; }
-        [XmlElement(ElementName = "Tarih")]
-        public string Tarih { get; set; }
-        [XmlElement(ElementName = "Date")]
-        public string Date { get; set; }
-        [XmlElement(ElementName = "Bulten_No")]
-        public string Bulten_No { get; set; }
+     
     }
 }
