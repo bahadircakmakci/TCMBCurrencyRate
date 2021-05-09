@@ -6,13 +6,14 @@ namespace TCMBCurrencyRate.Enum
 {
     public enum Sorting
     {
-        DESC=0,
-        ASC=1
+        DESC = 0,
+        ASC = 1
     }
     public enum Format
     {
-        XML=0,
-        JSON=1,
-        CSV=2
+        None = -1,
+        XML = 0,
+        JSON = 1,
+        CSV = 2
     }
 }
