@@ -32,7 +32,7 @@ namespace TBMBCurrencyRate.Tests
                 }
             };
 
-            tcmbService.Setup(x => x.GetAllTBMBCurrencyRate()).Returns(returnObject);
+            tcmbService.Setup(x => x.GetAllTCMBCurrencyRate()).Returns(returnObject);
             var currencyService = new CurrencyService(tcmbService.Object);
 
             // Act
@@ -64,7 +64,7 @@ namespace TBMBCurrencyRate.Tests
                 }
             };
 
-            tcmbService.Setup(x => x.GetAllTBMBCurrencyRate()).Returns(returnObject);
+            tcmbService.Setup(x => x.GetAllTCMBCurrencyRate()).Returns(returnObject);
             var currencyService = new CurrencyService(tcmbService.Object);
 
             // Act
@@ -95,7 +95,7 @@ namespace TBMBCurrencyRate.Tests
                 }
             };
 
-            tcmbService.Setup(x => x.GetAllTBMBCurrencyRate()).Returns(returnObject);
+            tcmbService.Setup(x => x.GetAllTCMBCurrencyRate()).Returns(returnObject);
             var currencyService = new CurrencyService(tcmbService.Object);
 
             // Act
@@ -138,7 +138,7 @@ namespace TBMBCurrencyRate.Tests
                 }
             };
 
-            tcmbService.Setup(x => x.GetAllTBMBCurrencyRate()).Returns(returnObject);
+            tcmbService.Setup(x => x.GetAllTCMBCurrencyRate()).Returns(returnObject);
             var currencyService = new CurrencyService(tcmbService.Object);
 
             // Act
@@ -181,7 +181,7 @@ namespace TBMBCurrencyRate.Tests
                 }
             };
 
-            tcmbService.Setup(x => x.GetAllTBMBCurrencyRate()).Returns(returnObject);
+            tcmbService.Setup(x => x.GetAllTCMBCurrencyRate()).Returns(returnObject);
             var currencyService = new CurrencyService(tcmbService.Object);
 
             // Act
@@ -224,7 +224,7 @@ namespace TBMBCurrencyRate.Tests
                 }
             };
 
-            tcmbService.Setup(x => x.GetAllTBMBCurrencyRate()).Returns(returnObject);
+            tcmbService.Setup(x => x.GetAllTCMBCurrencyRate()).Returns(returnObject);
             var currencyService = new CurrencyService(tcmbService.Object);
 
             // Assert
@@ -262,7 +262,7 @@ namespace TBMBCurrencyRate.Tests
                 }
             };
 
-            tcmbService.Setup(x => x.GetAllTBMBCurrencyRate()).Returns(returnObject);
+            tcmbService.Setup(x => x.GetAllTCMBCurrencyRate()).Returns(returnObject);
             var currencyService = new CurrencyService(tcmbService.Object);
 
             // Act
