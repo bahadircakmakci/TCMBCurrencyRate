@@ -1,4 +1,4 @@
-. Bu Kütüphanemiz, TCMB kurları alıp, filtreleyip ve çıktı olarak Json,Xml,Csv sunar.
+. Bu Kütüphanemiz, TCMB kurları alıp, filtreleyip ve çıktı olarak (Json,Xml,Csv) verilen parametrelere göre sunar.
 
 . SOLID prensiplerine uygun olarak hazırlanmaya çalışılmıştır.
 
